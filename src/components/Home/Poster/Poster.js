@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react'
-
+import './Poster.scss'
 
 const Poster = (props) => {
 
@@ -16,9 +16,9 @@ const Poster = (props) => {
         getPoster();
     
     },[])
-    console.log(props)
+  
     return (
-        <img style={{width:"16vw",padding:'1rem'}} src={url}/>
+        <img id="posterImg" src={url}/>
     )
 }
 
