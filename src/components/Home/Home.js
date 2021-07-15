@@ -46,7 +46,7 @@ const Home = (props) => {
                             </div>
                             <div className="descCont">
                                 <div>
-                                {el.overview.substring(0,200)} ...
+                                {el.overview.substring(0,120)} ...
                                  
                                 </div>
                             </div>
