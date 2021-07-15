@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/popular-movies/static/css/main.8517e3b0.chunk.css",
-    "main.js": "/popular-movies/static/js/main.2c12edf2.chunk.js",
-    "main.js.map": "/popular-movies/static/js/main.2c12edf2.chunk.js.map",
+    "main.js": "/popular-movies/static/js/main.d542b9d0.chunk.js",
+    "main.js.map": "/popular-movies/static/js/main.d542b9d0.chunk.js.map",
     "runtime-main.js": "/popular-movies/static/js/runtime-main.df72bf47.js",
     "runtime-main.js.map": "/popular-movies/static/js/runtime-main.df72bf47.js.map",
     "static/js/2.0b0c3cb6.chunk.js": "/popular-movies/static/js/2.0b0c3cb6.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.df72bf47.js",
     "static/js/2.0b0c3cb6.chunk.js",
     "static/css/main.8517e3b0.chunk.css",
-    "static/js/main.2c12edf2.chunk.js"
+    "static/js/main.d542b9d0.chunk.js"
   ]
 }
