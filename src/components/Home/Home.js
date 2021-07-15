@@ -1,10 +1,10 @@
 import React,{useEffect,useState} from 'react'
 import { bindActionCreators} from "redux"
 import { connect } from "react-redux"
-import Poster from "./Poster/Poster"
-import ReactHLS from "react-hls"
+import Poster from "../Poster/Poster"
 import LikeButton from "../LikeButton/LikeButton"
 import {requestTopMovies} from "../../actions"
+import {Link} from 'react-router-dom'
 import './Home.scss'
 
 const Home = (props) => {
@@ -29,14 +29,16 @@ const Home = (props) => {
                         <div>
                       
                             <div className="titleCont">
-                                <div className="title">
+                            
+                                <div className="title" >
+                                <Link to={`/movie/${el.id}`}>
                                 {el.title.length>25?
                                 <>
                                 {el.title.substring(0,25)} - 
                                 </>:<>
                                 {el.title}
                                 </>}
-
+                                </Link>
                                 </div>
                                 <div className="heart">
                                 <LikeButton/>
@@ -44,22 +46,14 @@ const Home = (props) => {
                             </div>
                             <div className="descCont">
                                 <div>
-                                {el.overview.substring(0,200)} ... more
+                                {el.overview.substring(0,200)} ...
+                                 
                                 </div>
                             </div>
                       
-                        <Poster  posterPath = {el.poster_path}/>
+                        <Poster posterPath = {el.poster_path}/> 
                     </div>
-                        {/*<div>
-                        <h1>
-                        {el.title}
-                        </h1>
-                        </div>
-                        {/* <div>
-                        <ReactHLS autoplay controls url = {'https://content.jwplatform.com/manifests/yp34SRmf.m3u8'}/>
-                        </div> 
-                        <div >{el.overview.substring(0,150)} .... <span style={{color:'blue',textDocaration:'underline'}}>Read more</span></div>
-                        */}
+    
                     </div>
                 )
             })}

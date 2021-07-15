@@ -1,0 +1,87 @@
+#movieCont{
+    display:flex;
+    padding:1rem 0.3rem 3rem 0.3rem;
+    border-radius:40px;
+
+    background: linear-gradient(to right,rgba(31,28,44,1), rgba(146,141,171,1));
+    margin: 10vh auto;
+    font-family: 'Josefin Sans', sans-serif;
+
+    .leftFlex{
+        border-right:1px solid white;
+    
+    .poster{
+        
+        img{
+        width:30vw !important;
+        height:70vh;
+        border-radius:10px;
+        overflow:hidden;
+        margin:2rem 2rem 0 2rem;
+   
+    }
+    }
+
+    .mTitle{
+       
+        h1{
+        margin:1rem 0rem  0 2rem;
+        padding:0;
+        color:white;
+        }
+    }
+}
+.rightFlex{
+    .mOverview{
+        margin-top:4rem;
+        font-size:1.6rem;
+        padding:1rem;
+        div{
+            margin-bottom:1rem;
+            color:white;
+        }
+        span{
+            color:white;
+            margin-top:2rem;
+        }
+    }
+    .infoIcons{
+        display:flex;
+        align-items:flex-end;
+        .info{
+            margin:2rem;
+            color:white;
+        }
+    }
+    .preview{
+       
+       
+
+        width:fit-content;
+        margin-left:2rem;
+        button{
+            padding:0.7rem 2.2rem;
+            border:1px solid white;
+            color:white;
+            font-size:1rem;
+            background: linear-gradient(to right,rgba(31,28,44,0.4), rgba(146,141,171,0.4));
+            border-radius:25px;
+            &:hover{
+                cursor:pointer;
+                color:rgba(31,28,44,1);
+                background:white;
+                transition:0.4s ease-in;
+            }
+        }
+        
+       
+    }
+}
+}
+
+.hls-player{
+    
+            width:400px!important;
+            margin-left:1rem;
+        
+}

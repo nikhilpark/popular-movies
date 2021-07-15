@@ -7,7 +7,7 @@ const Poster = (props) => {
     useEffect(()=>{
 
         const getPoster = async () =>{
-            const response = await fetch(`https://image.tmdb.org/t/p/w400/${props.posterPath}`)
+            const response = await fetch(`https://image.tmdb.org/t/p/w500/${props.posterPath}`)
      
             setUrl(response.url)
            
